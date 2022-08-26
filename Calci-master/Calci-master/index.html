@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bishal</title>
+    <link rel="stylesheet" href="one.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onkeydown="keyCode(event, this.value)">
+    <div class="calculator">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-box">
+                    <section class="screen-output">
+                        0
+                    </section>
+                </div>
+            </div>
+            <div class="buttons">
+                    <div class="row" id="level-1 ">
+                        <button class="box" id="boxSquare1" >C</button>
+                        <button class="box"><b>←</b></button>
+                        <button class="box operator" >÷</button>
+                    </div>
+                    <div class="row" id="level-2">
+                        <button class="box">7</button>
+                        <button class="box">8</button>
+                        <button class="box">9</button>
+                        <button class="box operator">×</button>
+                    </div>
+                    <div class="row" id="level-3">
+                        <button class="box">4</button>
+                        <button class="box">5</button>
+                        <button class="box">6</button>
+                        <button class="box operator">-</button>
+                    </div>
+                    <div class="row" id="level-4">
+                        <button class="box">1</button>
+                        <button class="box">2</button>
+                        <button class="box">3</button>
+                        <button class="box operator" >+</button>
+                    </div>
+                    <div class="row" id="level-5">
+                        <button class="box" id="boxCube1">0</button>
+                        <button class="box operator" id="boxCube2">=</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./one.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* removing extra spaces from the sides */
+html,body {
+    margin:0;
+    padding:0;
+  }
+
+/* making the structure of the calculator */
+.calculator {
+    background-image:linear-gradient(to right, blanchedalmond, rgba(243, 222, 33, 0.822));
+    height: 100vh;
+    width: 100vw;   
+    /* border: 2px solid red ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 52vh;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    border: 4px solid rgb(92, 89, 89);
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    padding-right: -15px;
+}
+
+.screen {
+    background-color: black;
+    /* padding-bottom: 5px; */
+    /* border: 0.5px solid blue; */
+    height: 20vh;
+    width: inherit;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    height: 57vh;
+    width: inherit;
+    /* border: 0.5px solid red;     */
+    padding-bottom: 18px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+.row {
+    height:20% ;
+    width: inherit;
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    height:100%;
+    width: 30%;
+    background-color: #d8d9db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* some css for the big buttons */
+#boxSquare1 {
+    width: 60% !important;
+}
+
+#boxSquare2 {
+    width:40% !important;
+}
+
+#boxCube1 {
+    width:75%;
+}
+
+#boxCube2 {
+    width:25%;
+}
+
+/* css for the text on buttons */
+.operator{
+    background-color: #df974c;
+    color: white;
+}
+
+/* font styles for all */
+*{
+    font: monospace;
+    font-size: 30px;
+    /* font-weight: ; */
+}
+
+/* adding styles to the screen */
+.screen-box {
+    height: 95%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+}
+
+/* text decoration in screen */
+.screen-output {
+    color: white;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+    overflow: hidden; 
+  }
+
+/* button animation */
+.box {
+    padding: 5px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid rgb(2, 2, 2);
+    margin-top: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(248, 245, 245);
+  }
+  
+  .box:hover {background-color: whitesmoke}
+  
+  .box:active {
+    background-color: silver;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
